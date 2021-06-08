@@ -25,6 +25,28 @@ header {
     color: #000000;
     font-size: 22px;
 }
+.hovers{
+    display: flex;
+    column-gap: 12px;
+    
+}
+.hovers p{
+    background-color: black;
+    text-align: center;
+    border: solid 1px white;
+    padding: 12px;
+    opacity: 0;
+    
+}
+.hovers p:hover{
+    opacity: 1;
+}
+.hovers a{
+color: white;
+}
+.hovers a{
+    text-decoration: none;
+}
 
 .left-function a {
     margin-left: 10px;
@@ -49,7 +71,9 @@ header {
     margin-top: 16px;
     padding-bottom: 32px;
 }
-
+.capa{
+    margin-left: 8px;
+}
 .top-element {
     display: flex;
     column-gap: 30px;
@@ -181,10 +205,9 @@ table td {
     text-decoration: none;
     color: #383838;
 }
-
 .left-section a {
     text-decoration: none;
-    margin-left: 12px;
+    padding-left: 20px;
     color: #383838;
     font-weight: bold;
 }
@@ -207,6 +230,8 @@ table td {
 .footer-elements {
     display: flex;
     justify-content: space-between;
+    padding-right: 18px;
+    padding-left: 8px;
 }
 
 .copy-right h4 {
@@ -298,8 +323,32 @@ footer i:hover{
 .track1 :hover {
     color: #1e90ff;
 }
+.play:hover{
+    background-color:#383838;
+    color: white;
+}
+.youtube:hover{
+    background-color:#383838;
+    color: white;
+}
+.spotify:hover{
+    background-color:#383838;
+    color: white;
+}
+.apple:hover{
+    background-color:#383838;
+    color: white;
+}
+.google:hover{
+    background-color:#383838;
+    color: white;
+}
+.bandcamp:hover{
+    background-color:#383838;
+    color: white;
+}
 
-@media only screen and (min-width:321px) and (max-width:768px) {
+@media only screen and (min-width:320px) and (max-width:768px) {
     .navbar {
         display: none;
     }
@@ -349,7 +398,7 @@ footer i:hover{
         font-size: 16px;
     }
     .right-section a {
-        margin-right: 6px;
+        margin-right: 0px;
     }
     .right-section {
         margin-left: 10px;
@@ -360,9 +409,23 @@ footer i:hover{
     .copy-right h4 {
         text-align: end;
     }
+    table button{
+    margin-right: 16px;
+    }
+    .days{
+        font-size: 35px;
+        margin: 0px;
+    }
+    .conro{
+        margin: 0px;
+    }
+    .released{
+        margin: 0px;
+        font-size: 16px;
+    }
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:769px) and (max-width:1100px) {
     .grid-element p {
         display: none;
     }
@@ -374,5 +437,8 @@ footer i:hover{
     }
     .hide {
         display: none;
+    }
+    .tracks {
+        grid-template-columns: 25% 25% 25% 25%;
     }
 }
